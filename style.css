@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+:root{
+    --color-body: rgb(233, 215, 215);
+    --color-heading: #eef3db;
+    --color-base: rgb(200, 142, 167);
+    --color-base-2: rgb(168, 111, 136);
+    --color-brand: rgb(100, 56, 67);
+    --color-brand-2: #eec0d9;
+    --sidbar-width: 240px;
+    --font-base: "Bai Jamjuree";
+
+    body{
+        background-color: rgb(168, 111, 136);
+        color:rgb(168, 111, 136);
+        font-family: "Bai Jamjuree", "sans-serif";
+        overflow-x: hidden; /* Hide horizontal scrollbar*/
+    }
+    
+    h1,h2,h3,h4,h5,h6{
+        color:var(--color-heading);
+    }
+    
+    a{
+        text-decoration: none;
+        color: var(--color-body)
+        transition: all 0.4s ease;
+    }
+    
+    a:hover{
+        color:var(--color-brand)
+    }
+    
+    img{
+        width: 100%;
+    }
+    .bg-base{
+        background-color: var(--color-base);
+    }
+    
+
+/*.full-height{
+    min-height:100vh;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top:80px;
+    padding-bottom:80px;
+    border-bottom: 2px solid rgba(255,255,255,0.3);*/
+
+.full-height{
+    min-height:100vh;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    padding-top:80px;
+    padding-bottom:80px;
+    border-bottom: 2px solid rgba(255, 254, 254, 0.3);
+}
+.shadow-effect{
+    transition: all 0.5s;
+}
+.shadow-effect:hover{
+    box-shadow:0 0 0 6px var(--color-brand);
+}
+.iconbox{
+    display: block;
+    background-color: var(--color-base);
+}
+
+
+/*------NAVBAR---------*//*
+.navbar{
+    background-color: var(--color-base);
+}
+.navbar 
+.nav-link{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #eef3db;
+}
+.navbar 
+.nav-link:hover{
+    color:var(--color-brand)
+    
+}
+.nav-link{
+    font-weight: 700;
+    position: relative;
+}
+.nav-link::after{
+    content:"";
+    width:0%;
+    height:2px;
+    background-color: var(--color-brand);
+    position: absolute;
+    left:0;
+    top:110%;
+    transition: all 0.4s;
+}
+.nav-link:hover::after{
+    width:100%;
+}
+.navbar .nav-link.active{
+    color:#eef3db;
+}
+.navbar .nav-link.active:hover{
+    color:var(--color-brand)
+}
+*/
+
+/*
+@media(min-width:992px){
+    .navbar{
+        min-height:100vh;
+        width:var(--sidbar-width);
+        background: linear-gradient(rgba(160, 96, 124, 0.8), rgba(223, 180, 213, 0.7)), url(sidbar-pic.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .navbar-brand img{
+        border: 8px solid var(--color-brand);
+    }
+    #content{
+        padding-left:var(--sidbar-width);
+    }
+    #projects{
+        padding-left:var(--sidbar-width);
+    }
+    .carousel-item img{
+        Width: 800px;
+        Height: 400px;
+    }
+}*/
+@media(min-width:992px){
+    .carousel-item img{
+        Width: 700px;
+        Height: 330px;
+    }
+}
+@media screen and (max-width: 767px){
+    #content{
+        padding-top:50px;
+        padding-left: 30px;
+    }
+
+}
+}
+span{
+    color:var(--color-brand)
+}
+
+/*------CARD--------*/
+.card-custom .card-custom-image{
+    overflow: hidden;
+}
+.card-custom-image img{
+    transition: all 0.4s ease;
+}
+.card-custom:hover .card-custom-image img{
+    transform: scale(1.1);
+}
+
+/*--------------NEW----------------*/
+.navbar{
+    background-color: var(--color-base);
+    
+}
+.navbar 
+.nav-link{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #eef3db;
+}
+.navbar 
+.nav-link:hover{
+    color:var(--color-brand)
+    
+}
+.nav-link{
+    font-weight: 700;
+    position: relative;
+}
+.nav-link::after{
+    content:"";
+    width:0%;
+    height:2px;
+    background-color: var(--color-brand);
+    position: absolute;
+    left:0;
+    top:110%;
+    transition: all 0.4s;
+}
+.nav-link:hover::after{
+    width:100%;
+}
+.navbar .nav-link.active{
+    color:#eef3db;
+}
+.navbar .nav-link.active:hover{
+    color:var(--color-brand)
+}
